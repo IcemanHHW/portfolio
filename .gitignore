@@ -24,4 +24,4 @@ pnpm-debug.log*
 .idea/
 
 # VS Code setting folrer
-/.vscode
+.vscode/

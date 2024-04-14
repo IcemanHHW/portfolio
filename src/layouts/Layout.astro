@@ -4,22 +4,33 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import "../../styles/style.css";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="has-navbar-fixed-top">
+		<Navigation />
+
 		<slot />
+
+		<footer class="footer mt-auto has-background-light">
+			<div class="container">
+				<div class="content has-text-centered">
+					<p>Kampmeijer.nl © 2017 - {new Date().getFullYear()}</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
-<style is:global>
-
-</style>
+<style is:global></style>

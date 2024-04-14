@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets'
+import NotFound404Image from '../images/404.svg'
+---
+
+<Layout title="404 | Kampmeijer.nl">
+ <div class="container">
+    <div class="is-flex is-justify-content-center is-align-items-center mt-5 mb-5">
+        <div class="has-text-centered">
+          <h1 class="is-size-1 has-text-weight-bold has-text-danger">404</h1>
+          <p class="is-size-3 has-text-weight-semi-bold has-text-danger">De pagina kan helaas niet worden gevonden</p>
+          <div class="mt-4 mb-4">
+            <Image src={NotFound404Image} alt="404" />
+          </div>
+
+          <a href="/" class="button is-primary has-text-white">Go Home</a>
+        </div>
+      </div>
+ </div>
+</Layout>
+
+<style>
+
+</style>

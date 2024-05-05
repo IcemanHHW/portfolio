@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Checkmark from '../components/Checkmark.astro';
+import { Image } from 'astro:assets';
+import PlaceholderImage from '../images/placeholder.png'
+import SocialImage from '../images/social.svg'
 ---
 
 <Layout title="Portfolio">
@@ -10,6 +14,102 @@ import Layout from '../layouts/Layout.astro';
                 <span class="is-size-4 has-text-white">Hallo! Ik ben</span>
                 <h1 class="title is-size-1 has-text-white">Maarten Kampmeijer</h1>
                 <span class="subtitle is-size-2 has-text-white">Webdeveloper</span>
+            </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div class="cell">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, hic eveniet! Facilis officia reiciendis quia esse aut excepturi inventore, libero laboriosam molestias nesciunt quas incidunt culpa reprehenderit commodi labore ab.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus praesentium.
+                        Necessitatibus dolores qui iste nostrum exercitationem maxime eligendi in at voluptas, enim doloremque accusamus, non, corporis consequatur veritatis recusandae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dicta eligendi, harum, non qui ab, ipsa incidunt mollitia maiores reprehenderit commodi quod magnam omnis vero perspiciatis praesentium quibusdam ratione labore.
+                    </p>
+                </div>
+                <div class="cell">
+                    <figure class="image is-128x128">
+                        <Image src={PlaceholderImage} alt="Maarten Kampmeijer" />
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+            <h2 class="title is-4 is-size-5-touch">Projecten</h2>
+            <p>Hier zijn wat projecten waar ik aan gewerkt heb:</p>
+            <ul>
+                <li class="is-flex is-align-items-flex-start">
+                   <Checkmark />
+                    <div class="ml-3 mb-4">
+                        <h4 class="has-text-weight-bold mb-1">Project 1</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, at excepturi nam reiciendis aspernatur tempora vitae hic nisi eos, nobis libero harum sint dolore a quia reprehenderit necessitatibus suscipit voluptatum.
+                        </p>
+                    </div>
+                </li>
+                <li class="is-flex is-align-items-flex-start">
+                    <Checkmark />
+                    <div class="ml-3 mb-4">
+                        <h4 class="has-text-weight-bold mb-1">Project 2</h4>
+                        <p>
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit inventore excepturi modi temporibus laboriosam perspiciatis. Assumenda modi blanditiis accusantium eveniet, iure delectus saepe, dignissimos magnam doloribus reiciendis deserunt repellat cupiditate?
+                        </p>
+                    </div>
+                </li>
+                <li class="is-flex is-align-items-flex-start">
+                    <Checkmark />
+                    <div class="ml-3 mb-4">
+                        <h4 class="has-text-weight-bold mb-1">Project 3</h4>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga officiis asperiores porro illo aliquid repellendus dolores provident sit eveniet, voluptas veniam animi dolorum nulla cupiditate vitae, perspiciatis sint tempora.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+            <h2 class="title is-4 is-size-5-touch">Contact</h2>
+            <p>Ik ben bereikbaar op de volgende plekken:</p>
+            <div class="grid">
+                <div class="cell">
+                    <ul>
+                        <li>
+                            <div class="icon-text is-align-items-center">
+                                <span class="icon is-large"><i class="fa-brands fa-square-twitter fa-2x"></i></span>
+                                <span><a href="https://twitter.com/icemanhhw">Twitter</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-text is-align-items-center">
+                                <span class="icon is-large"><i class="fa-brands fa-square-github fa-2x"></i></span>
+                                <span><a href="https://github.com/IcemanHHW/">Github</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-text is-align-items-center">
+                                <span class="icon is-large"><i class="fa-brands fa-linkedin fa-2x"></i></span>
+                                <span><a href="https://www.linkedin.com/in/maarten-kampmeijer/">LinkedIn</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-text is-align-items-center">
+                                <span class="icon is-large"><i class="fa-solid fa-envelope fa-2x"></i></span>
+                                <span><a href="mailto:maarten.kampmeijer@gmail.com">E-mail</a></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <figure class="image is-260x260">
+                        <Image src={SocialImage} alt="contact afbeelding" />
+                    </figure>
+                </div>
             </div>
         </div>
       </section>

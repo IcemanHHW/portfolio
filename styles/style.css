@@ -6,9 +6,31 @@
     --bulma-primary-h: 205;
     --bulma-primary-s: 100%;
     --bulma-primary-l: 50%;
+    scroll-behavior: smooth;
 }
 
-.image.is-260x260 {
-    height: 260px;
-    width: 260px;
+.is-260x260 {
+    height: 16.25rem;
+    width: 16.25rem;
+}
+
+.is-269x404 {
+    height: 404px;
+    width: 269px;
+}
+
+.is-linkedin i {
+    color: #0a66c2;
+}
+
+.is-github i {
+    color: #24292e;
+}
+
+.is-twitter i {
+    color: #1da1f2;
+}
+
+.navbar-item {
+    color: #ffffff;
 }

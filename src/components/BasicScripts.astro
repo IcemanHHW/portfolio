@@ -1,0 +1,39 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Navbar mobile menu //
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+    });
+    });
+
+
+    // Calculate Age function //
+    const calculateAge = (birthDate) => {
+    const today = new Date();
+    const birthDateObj = new Date(birthDate);
+    let age = today.getFullYear() - birthDateObj.getFullYear();
+    const m = today.getMonth() - birthDateObj.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDateObj.getDate())) {
+        age--;
+    }
+    return age;
+    };
+
+    const birthDate = "1998-06-27";
+
+
+    const updateAgeText = () => {
+        document.getElementById("age").textContent = calculateAge(birthDate);
+    };
+
+    updateAgeText();
+    setInterval(updateAgeText, 365 * 24 * 60 * 60 * 1000);
+
+    });
+
+</script>

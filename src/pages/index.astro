@@ -2,13 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Checkmark from '../components/Checkmark.astro';
 import { Image } from 'astro:assets';
-import PlaceholderImage from '../images/placeholder.png'
+import AboutImage from '../images/maarten.jpg'
 import SocialImage from '../images/social.svg'
+import ProjectImage from '../images/project.svg'
 ---
 
 <Layout title="Portfolio">
  <main>
-    <section class="hero is-medium is-primary">
+    <section id="home" class="hero is-medium is-primary">
         <div class="hero-body">
             <div class="container">
                 <span class="is-size-4 has-text-white">Hallo! Ik ben</span>
@@ -20,59 +21,55 @@ import SocialImage from '../images/social.svg'
       <section class="section">
         <div class="container">
             <div class="grid">
-                <div class="cell">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, hic eveniet! Facilis officia reiciendis quia esse aut excepturi inventore, libero laboriosam molestias nesciunt quas incidunt culpa reprehenderit commodi labore ab.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus praesentium.
-                        Necessitatibus dolores qui iste nostrum exercitationem maxime eligendi in at voluptas, enim doloremque accusamus, non, corporis consequatur veritatis recusandae.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dicta eligendi, harum, non qui ab, ipsa incidunt mollitia maiores reprehenderit commodi quod magnam omnis vero perspiciatis praesentium quibusdam ratione labore.
+                <div class="cell is-col-span-2 is-flex">
+                    <p class="is-align-self-center">
+                        <span id="age"></span> jaar en wonend in Den Bosch, met nu bijna 4 jaar ervaring als full-stack webdeveloper. <br>
+                        Ik heb voornamelijk ervaring met WordPress en Laravel, maar ik sta altijd open om nieuwe technieken te leren en m'n kennis te verbreden.
+                        Met WordPress maak ik voornamelijk gebruik van ACF, WP Bakery en Bootstrap om een custom thema te bouwen. En met Laravel maak ik gebrui van Blade, Vue componenten en soms Tailwind om het project te ondersteunen.
                     </p>
                 </div>
                 <div class="cell">
-                    <figure class="image is-128x128">
-                        <Image src={PlaceholderImage} alt="Maarten Kampmeijer" />
+                    <figure class="image is-269x404">
+                        <Image src={AboutImage} alt="Maarten Kampmeijer" />
                     </figure>
                 </div>
             </div>
 
         </div>
       </section>
-      <section class="section">
+      <section id="projects" class="section">
         <div class="container">
             <h2 class="title is-4 is-size-5-touch">Projecten</h2>
-            <p>Hier zijn wat projecten waar ik aan gewerkt heb:</p>
-            <ul>
+            <p>Hier zijn wat persoonlijke projecten waar ik aan gewerkt heb:</p>
+            <ul class="mt-4">
                 <li class="is-flex is-align-items-flex-start">
                    <Checkmark />
                     <div class="ml-3 mb-4">
-                        <h4 class="has-text-weight-bold mb-1">Project 1</h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, at excepturi nam reiciendis aspernatur tempora vitae hic nisi eos, nobis libero harum sint dolore a quia reprehenderit necessitatibus suscipit voluptatum.
-                        </p>
+                        <h4 class="has-text-weight-bold mb-1">Portfolio</h4>
+                        <div class="content">
+                            <p>
+                                Dit portfolio wat je nu zit te lezen is gebouwd op <a target="_blank" href="https://astro.build/">Astro</a> en is gestyled met <a target="_blank" href="https://bulma.io/">Bulma</a> voor een simpel design.
+                                <ul>
+                                    <li>404 pagina voor als je verdwaalt raakt op de onepager</li>
+                                    <li>Binnenkort meertalig</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
                 </li>
                 <li class="is-flex is-align-items-flex-start">
                     <Checkmark />
                     <div class="ml-3 mb-4">
-                        <h4 class="has-text-weight-bold mb-1">Project 2</h4>
-                        <p>
-                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit inventore excepturi modi temporibus laboriosam perspiciatis. Assumenda modi blanditiis accusantium eveniet, iure delectus saepe, dignissimos magnam doloribus reiciendis deserunt repellat cupiditate?
-                        </p>
-                    </div>
-                </li>
-                <li class="is-flex is-align-items-flex-start">
-                    <Checkmark />
-                    <div class="ml-3 mb-4">
-                        <h4 class="has-text-weight-bold mb-1">Project 3</h4>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga officiis asperiores porro illo aliquid repellendus dolores provident sit eveniet, voluptas veniam animi dolorum nulla cupiditate vitae, perspiciatis sint tempora.
-                        </p>
+                        <h4 class="has-text-weight-bold mb-1">To be continued...</h4>
+                        <figure class="image is-260x260 mt-2">
+                            <Image src={ProjectImage} alt="Project" />
+                        </figure>
                     </div>
                 </li>
             </ul>
         </div>
       </section>
-      <section class="section">
+      <section id="contact" class="section">
         <div class="container">
             <h2 class="title is-4 is-size-5-touch">Contact</h2>
             <p>Ik ben bereikbaar op de volgende plekken:</p>
@@ -81,25 +78,25 @@ import SocialImage from '../images/social.svg'
                     <ul>
                         <li>
                             <div class="icon-text is-align-items-center">
-                                <span class="icon is-large"><i class="fa-brands fa-square-twitter fa-2x"></i></span>
-                                <span><a href="https://twitter.com/icemanhhw">Twitter</a></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-text is-align-items-center">
-                                <span class="icon is-large"><i class="fa-brands fa-square-github fa-2x"></i></span>
-                                <span><a href="https://github.com/IcemanHHW/">Github</a></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-text is-align-items-center">
-                                <span class="icon is-large"><i class="fa-brands fa-linkedin fa-2x"></i></span>
+                                <span class="icon is-large is-linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></span>
                                 <span><a href="https://www.linkedin.com/in/maarten-kampmeijer/">LinkedIn</a></span>
                             </div>
                         </li>
                         <li>
                             <div class="icon-text is-align-items-center">
-                                <span class="icon is-large"><i class="fa-solid fa-envelope fa-2x"></i></span>
+                                <span class="icon is-large is-github"><i class="fa-brands fa-square-github fa-2x"></i></span>
+                                <span><a href="https://github.com/IcemanHHW/">Github</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-text is-align-items-center">
+                                <span class="icon is-large is-twitter"><i class="fa-brands fa-square-twitter fa-2x"></i></span>
+                                <span><a href="https://twitter.com/icemanhhw">Twitter</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-text is-align-items-center">
+                                <span class="icon is-large has-text-grey"><i class="fa-solid fa-square-envelope fa-2x"></i></span>
                                 <span><a href="mailto:maarten.kampmeijer@gmail.com">E-mail</a></span>
                             </div>
                         </li>

@@ -14,9 +14,9 @@
     width: 16.25rem;
 }
 
-.is-269x404 {
+.is-370x404 {
     height: 404px;
-    width: 269px;
+    width: 370px;
 }
 
 .is-linkedin i {
@@ -33,4 +33,8 @@
 
 .navbar-item {
     color: #ffffff;
+}
+
+.has-rounded-borders {
+    border-radius: 0.25rem;
 }

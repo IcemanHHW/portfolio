@@ -7,7 +7,7 @@ import SocialImage from '../images/social.svg'
 import ProjectImage from '../images/project.svg'
 ---
 
-<Layout title="Portfolio">
+<Layout title="Maarten Kampmeijer">
  <main>
     <section id="home" class="hero is-medium is-primary">
         <div class="hero-body">
@@ -23,18 +23,22 @@ import ProjectImage from '../images/project.svg'
             <div class="columns">
                 <div class="column is-three-fifths is-flex">
                     <p class="is-align-self-center has-text-justified">
-                        <span id="age"></span> jaar en wonend in Den Bosch, met nu bijna 4 jaar ervaring als full-stack webdeveloper.
-                        Ik heb voornamelijk ervaring met WordPress en Laravel, maar ik sta altijd open om nieuwe technieken te leren en m'n kennis te verbreden.
-                        Met WordPress maak ik voornamelijk gebruik van ACF, WP Bakery en Bootstrap om een custom thema te bouwen. En met Laravel maak ik gebrui van Blade, Vue componenten en soms Tailwind om het project te ondersteunen.
+                        <span id="age"></span> jaar, geboren en getogen in Heerhugowaard en nu wonend in Den Bosch. Met de start van mijn professionele carrière in 2020 heb ik nu bijna 4 jaar werkervaring als webdeveloper.
+                        Gedurende deze jaren heb ik ervaring met WordPress en Laravel opgebouwd, echter sta ik altijd open om nieuwe technieken te leren en m'n kennis te verbreden.
+                        Met WordPress maak ik voornamelijk gebruik van ACF, WP Bakery en Bootstrap om een custom thema te bouwen, terwijl ik met Laravel gebruik maak van Blade, Vue componenten en soms Tailwind om het project te ondersteunen.
+                        <br><br>
+                        Naast webdevelopment houd ik mezelf bezig met het lezen van boeken en manga, gamen (vooral MMORPG's als World of Warcraft en Final Fantasy 14), het bouwen van LEGO sets en wandelen in de natuur met mijn honden.
+                        Daarnaast ben ik op zoek naar een nieuwe (lokale) groep om Dungeons & Dragons om mee te spelen.
+                        <br><br>
+                        De komende jaren wil ik mij meer gaan richten op het verbreden van mijn vaardigheden zodat ik inzetbaar kan zijn op elk vlak van de ontwikkeling, en mijn interesse in het vak verder kan exploreren.
                     </p>
                 </div>
                 <div class="column">
-                    <figure class="image is-269x404">
-                        <Image src={AboutImage} alt="Maarten Kampmeijer" />
+                    <figure class="image is-370x404">
+                        <Image class='has-rounded-borders' src={AboutImage} alt="Maarten Kampmeijer" />
                     </figure>
                 </div>
             </div>
-
         </div>
       </section>
       <section id="projects" class="section">
@@ -45,10 +49,10 @@ import ProjectImage from '../images/project.svg'
                 <li class="is-flex is-align-items-flex-start">
                    <Checkmark />
                     <div class="ml-3 mb-4">
-                        <h4 class="has-text-weight-bold mb-1">Portfolio</h4>
+                        <h3 class="has-text-weight-bold mb-1">Portfolio</h3>
                         <div class="content">
                             <p>
-                                Dit portfolio wat je nu zit te lezen is gebouwd op <a target="_blank" href="https://astro.build/">Astro</a> en is gestyled met <a target="_blank" href="https://bulma.io/">Bulma</a> voor een simpel design.
+                                Dit portfolio wat je nu zit te lezen is gebouwd met <a target="_blank" href="https://astro.build/">Astro</a> en is gestyled met <a target="_blank" href="https://bulma.io/">Bulma</a> voor een simpel design.
                                 <ul>
                                     <li>404 pagina voor als je verdwaalt raakt op de onepager</li>
                                     <li>Binnenkort meertalig</li>
@@ -60,7 +64,7 @@ import ProjectImage from '../images/project.svg'
                 <li class="is-flex is-align-items-flex-start">
                     <Checkmark />
                     <div class="ml-3 mb-4">
-                        <h4 class="has-text-weight-bold mb-1">To be continued...</h4>
+                        <h3 class="has-text-weight-bold mb-1">To be continued...</h3>
                         <figure class="image is-260x260 mt-2">
                             <Image src={ProjectImage} alt="Project" />
                         </figure>

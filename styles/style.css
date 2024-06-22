@@ -15,8 +15,8 @@
 }
 
 .is-370x404 {
-    height: 404px;
-    width: 370px;
+    max-height: 25.25rem;
+    max-width: 23.125rem;
 }
 
 .is-linkedin i {

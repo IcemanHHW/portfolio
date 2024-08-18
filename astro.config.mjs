@@ -5,5 +5,9 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://icemanhhw.github.io',
   integrations: [
-  ]
+  ],
+  i18n: {
+    defaultLocale: "nl",
+    locales: ["nl, en"],
+  }
 });

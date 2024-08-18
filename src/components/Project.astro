@@ -1,0 +1,15 @@
+---
+import Checkmark from '../components/Checkmark.astro';
+
+const { title } = Astro.props;
+---
+
+<li class="is-flex is-align-items-flex-start">
+    <Checkmark />
+     <div class="ml-3 mb-4">
+         <h3 class="has-text-weight-bold mb-1">{title}</h3>
+         <div class="content">
+            <slot />
+         </div>
+     </div>
+ </li>

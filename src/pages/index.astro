@@ -1,133 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Checkmark from '../components/Checkmark.astro';
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import Project from '../components/Project.astro';
 import { Image } from 'astro:assets';
-import AboutImage from '../images/maarten.jpg'
-import SocialImage from '../images/social.svg'
 import ProjectImage from '../images/project.svg'
 ---
 
 <Layout title="Maarten Kampmeijer">
  <main>
-    <section id="home" class="hero is-medium is-primary">
-        <div class="hero-body">
-            <div class="container">
-                <span class="is-size-4 has-text-white">Hallo! Ik ben</span>
-                <h1 class="title is-size-1 has-text-white">Maarten Kampmeijer</h1>
-                <span class="subtitle is-size-2 has-text-white">Webdeveloper</span>
-            </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-three-fifths is-flex">
-                    <p class="is-align-self-center has-text-justified">
-                        <span id="age"></span> jaar, geboren en getogen in Heerhugowaard en nu wonend in Den Bosch. Met de start van mijn professionele carrière in 2020 heb ik nu bijna 4 jaar werkervaring als webdeveloper.
-                        Gedurende deze jaren heb ik ervaring met WordPress en Laravel opgebouwd, echter sta ik altijd open om nieuwe technieken te leren en m'n kennis te verbreden.
-                        Met WordPress maak ik voornamelijk gebruik van ACF, WP Bakery en Bootstrap om een custom thema te bouwen, terwijl ik met Laravel gebruik maak van Blade, Vue componenten en soms Tailwind om het project te ondersteunen.
-                        <br><br>
-                        Naast webdevelopment houd ik mezelf bezig met het lezen van boeken en manga, gamen (vooral MMORPG's als World of Warcraft en Final Fantasy 14), het bouwen van LEGO sets en wandelen in de natuur met mijn honden.
-                        Daarnaast ben ik op zoek naar een nieuwe (lokale) groep om Dungeons & Dragons om mee te spelen.
-                        <br><br>
-                        De komende jaren wil ik mij meer gaan richten op het verbreden van mijn vaardigheden zodat ik inzetbaar kan zijn op elk vlak van de ontwikkeling, en mijn interesse in het vak verder kan exploreren.
-                    </p>
-                </div>
-                <div class="column">
-                    <figure class="image is-370x404">
-                        <Image class='has-rounded-borders' src={AboutImage} alt="Maarten Kampmeijer" />
-                    </figure>
-                </div>
-            </div>
-        </div>
-      </section>
-      <section id="projects" class="section">
-        <div class="container">
-            <h2 class="title is-4 is-size-5-touch">Projecten</h2>
-            <p>Hier zijn wat persoonlijke projecten waar ik aan gewerkt heb:</p>
-            <ul class="mt-4">
-                <li class="is-flex is-align-items-flex-start">
-                   <Checkmark />
-                    <div class="ml-3 mb-4">
-                        <h3 class="has-text-weight-bold mb-1">Portfolio</h3>
-                        <div class="content">
-                            <p>
-                                Dit portfolio wat je nu leest is gebouwd met <a target="_blank" href="https://astro.build/">Astro</a> en is gestyled met <a target="_blank" href="https://bulma.io/">Bulma</a> voor een simpel design.
-                                <ul>
-                                    <li>404 pagina voor als je verdwaalt raakt op de onepager</li>
-                                    <li>Binnenkort meertalig</li>
-                                </ul>
-                                <a target="_blank" href="https://github.com/IcemanHHW/portfolio">Github</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="is-flex is-align-items-flex-start">
-                    <Checkmark />
-                     <div class="ml-3 mb-4">
-                         <h3 class="has-text-weight-bold mb-1">Discord bot</h3>
-                         <div class="content">
-                             <p>
-                                Een simpele Discord bot geschreven in Javascript en gebouwd met <a target="_blank" href="https://discord.js.org/">Discord.js</a>
-                                 <ul>
-                                     <li>Reageert als iemand een emoji gebruikt wat niet beschikbaar is in de server</li>
-                                     <li>Reageert met "I love you @username" wanneer iemand dat aan de bot vraagt</li>
-                                 </ul>
-                                 <a target="_blank" href="https://github.com/IcemanHHW/discord-bot">Github</a>
-                             </p>
-                         </div>
-                     </div>
-                 </li>
-                <li class="is-flex is-align-items-flex-start">
-                    <Checkmark />
-                    <div class="ml-3 mb-4">
-                        <h3 class="has-text-weight-bold mb-1">To be continued...</h3>
-                        <figure class="image is-260x260 mt-2">
-                            <Image src={ProjectImage} alt="Project" />
-                        </figure>
-                    </div>
-                </li>
-            </ul>
-        </div>
-      </section>
-      <section id="contact" class="section">
-        <div class="container">
-            <h2 class="title is-4 is-size-5-touch">Contact</h2>
-            <p>Ik ben bereikbaar op de volgende plekken:</p>
-            <div class="columns">
-                <div class="column">
-                    <ul>
-                        <li>
-                            <div class="icon-text is-align-items-center">
-                                <span class="icon is-large is-linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></span>
-                                <span><a target="_blank" href="https://www.linkedin.com/in/maarten-kampmeijer/">LinkedIn</a></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-text is-align-items-center">
-                                <span class="icon is-large is-github"><i class="fa-brands fa-square-github fa-2x"></i></span>
-                                <span><a target="_blank" href="https://github.com/IcemanHHW/">Github</a></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-text is-align-items-center">
-                                <span class="icon is-large has-text-grey"><i class="fa-solid fa-square-envelope fa-2x"></i></span>
-                                <span><a target="_blank" href="mailto:maarten.kampmeijer@gmail.com">E-mail</a></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <figure class="image is-260x260">
-                        <Image src={SocialImage} alt="contact afbeelding" />
-                    </figure>
-                </div>
-            </div>
-        </div>
-      </section>
+    <Header greeting="Hallo! Ik ben"></Header>
+    <About>
+        jaar, geboren en getogen in Heerhugowaard en nu wonend in Den Bosch. Met de start van mijn professionele carrière in 2020 heb ik nu bijna 4 jaar werkervaring als webdeveloper.
+        Gedurende deze jaren heb ik ervaring met WordPress en Laravel opgebouwd, echter sta ik altijd open om nieuwe technieken te leren en m'n kennis te verbreden.
+        Met WordPress maak ik voornamelijk gebruik van ACF, WP Bakery en Bootstrap om een custom thema te bouwen, terwijl ik met Laravel gebruik maak van Blade, Vue componenten en soms Tailwind om het project te ondersteunen.
+        <br><br>
+        Naast webdevelopment houd ik mezelf bezig met het lezen van boeken en manga, gamen (vooral MMORPG's als World of Warcraft en Final Fantasy 14), het bouwen van LEGO sets en wandelen in de natuur met mijn honden.
+        Daarnaast ben ik op zoek naar een nieuwe (lokale) groep om Dungeons & Dragons om mee te spelen.
+        <br><br>
+        De komende jaren wil ik mij meer gaan richten op het verbreden van mijn vaardigheden zodat ik inzetbaar kan zijn op elk vlak van de ontwikkeling, en mijn interesse in het vak verder kan exploreren.
+    </About>
+    <Projects title="Projecten" text="Hier zijn wat persoonlijke projecten waar ik aan gewerkt heb:">
+        <Project title="Portfolio">
+            <p>
+                Dit portfolio wat je nu leest is gebouwd met <a target="_blank" href="https://astro.build/">Astro</a> en is gestyled met <a target="_blank" href="https://bulma.io/">Bulma</a> voor een simpel design.
+                <ul>
+                    <li>404 pagina voor als je verdwaalt raakt op de onepager</li>
+                    <li>Meertalig</li>
+                </ul>
+                <a target="_blank" href="https://github.com/IcemanHHW/portfolio">Github</a>
+            </p>
+        </Project>
+        <Project title="Discord bot">
+            <p>
+                Een simpele Discord bot geschreven in Javascript en gebouwd met <a target="_blank" href="https://discord.js.org/">Discord.js</a>
+                <ul>
+                    <li>Reageert als iemand een emoji gebruikt wat niet beschikbaar is in de server</li>
+                    <li>Reageert met "I love you @username" wanneer iemand dat aan de bot vraagt of die van hem/haar houdt</li>
+                </ul>
+                <a target="_blank" href="https://github.com/IcemanHHW/discord-bot">Github</a>
+            </p>
+        </Project>
+        <Project title="To be continued...">
+            <figure class="image is-260x260 mt-2">
+                <Image src={ProjectImage} alt="Project" />
+            </figure>
+        </Project>
+    </Projects>
+    <Contact title="Contact" text="Ik ben bereikbaar op de volgende plekken:"></Contact>
  </main>
 </Layout>
-
-<style>
-
-</style>

@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import AboutImage from '../images/maarten.jpg'
+---
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-three-fifths is-flex">
+                <p class="is-align-self-center has-text-justified">
+                    <span id="age"></span> <slot />
+                </p>
+            </div>
+            <div class="column">
+                <figure class="image is-370x404">
+                    <Image class='has-rounded-borders' src={AboutImage} alt="Maarten Kampmeijer" />
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

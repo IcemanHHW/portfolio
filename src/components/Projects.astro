@@ -1,0 +1,14 @@
+---
+const { title } = Astro.props;
+const { text } = Astro.props;
+---
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="title is-4 is-size-5-touch">{title}</h2>
+        <p>{text}</p>
+        <ul class="mt-4">
+            <slot />
+        </ul>
+    </div>
+</section>

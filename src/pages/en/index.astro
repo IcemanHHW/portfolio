@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import About from '../../components/About.astro';
+import Projects from '../../components/Projects.astro';
+import Contact from '../../components/Contact.astro';
+import Project from '../../components/Project.astro';
+import { Image } from 'astro:assets';
+import ProjectImage from '../../images/project.svg'
+---
+
+<Layout title="Maarten Kampmeijer">
+ <main>
+    <Header greeting="Hello! I'm"></Header>
+    <About>
+        years old, born and raised in Heerhugowaard and now living in Den Bosch. With the start of my professional career in 2020, I now have almost 4 years of work experience as a web developer.
+        During these years I have built up experience with WordPress and Laravel, but I am always open to learning new techniques and broadening my knowledge.
+        With WordPress I mainly use ACF, WP Bakery and Bootstrap to build a custom theme, while with Laravel I use Blade, Vue components and sometimes Tailwind to support the project.
+        <br><br>
+        Besides web development, I keep myself busy with reading books and manga, gaming (especially MMORPGs like World of Warcraft and Final Fantasy 14), building LEGO sets and walking in nature with my dogs.
+        In addition, I am looking for a new (local) group to play Dungeons & Dragons with. <br><br>
+        In the coming years I want to focus more on broadening my skills so that I can be deployed in every area of ​​development, and further explore my interest in the profession.
+    </About>
+    <Projects title="Projects" text="Here are some personal projects I've been working on:">
+        <Project title="Portfolio">
+            <p>
+                This portfolio you are reading now is built with <a target="_blank" href="https://astro.build/">Astro</a> and styled with <a target="_blank" href="https://bulma.io/">Bulma</a> for a simple design.
+                <ul>
+                    <li>404 page in case you get lost on the onepager</li>
+                    <li>Multilingual</li>
+                </ul>
+                <a target="_blank" href="https://github.com/IcemanHHW/portfolio">Github</a>
+            </p>
+        </Project>
+        <Project title="Discord bot">
+            <p>
+                A simple Discord bot written in Javascript and built with <a target="_blank" href="https://discord.js.org/">Discord.js</a>
+                <ul>
+                    <li>Responds when someone uses an emoji that is not available in the server</li>
+                    <li>Responds with "I love you @username" when someone asks the bot if it loves them</li>
+                </ul>
+                <a target="_blank" href="https://github.com/IcemanHHW/discord-bot">Github</a>
+            </p>
+        </Project>
+        <Project title="To be continued...">
+            <figure class="image is-260x260 mt-2">
+                <Image src={ProjectImage} alt="Project" />
+            </figure>
+        </Project>
+    </Projects>
+    <Contact title="Contact" text="You can reach me on the following places:"></Contact>
+ </main>
+</Layout>

@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import SocialImage from '../images/social.svg'
+
+const { title } = Astro.props;
+const { text } = Astro.props;
+---
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="title is-4 is-size-5-touch">{title}</h2>
+        <p>{text}</p>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li>
+                        <div class="icon-text is-align-items-center">
+                            <span class="icon is-large is-linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></span>
+                            <span><a target="_blank" href="https://www.linkedin.com/in/maarten-kampmeijer/">LinkedIn</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-text is-align-items-center">
+                            <span class="icon is-large is-github"><i class="fa-brands fa-square-github fa-2x"></i></span>
+                            <span><a target="_blank" href="https://github.com/IcemanHHW/">Github</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-text is-align-items-center">
+                            <span class="icon is-large has-text-grey"><i class="fa-solid fa-square-envelope fa-2x"></i></span>
+                            <span><a target="_blank" href="mailto:maarten.kampmeijer@gmail.com">E-mail</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <figure class="image is-260x260">
+                    <Image src={SocialImage} alt="contact afbeelding" />
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
